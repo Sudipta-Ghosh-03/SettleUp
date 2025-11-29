@@ -1,23 +1,27 @@
-node_modules/
+*.DS_Store
+
+bazel-*
+node_modules
+
+# Expo
 .expo/
 dist/
-npm-debug.*
+web-build/
+expo-env.d.ts
+
+# Native builds
+ios/
+android/
 *.jks
 *.p8
 *.p12
 *.key
 *.mobileprovision
 *.orig.*
-web-build/
 
-
-
-
-ios
-android
-
-# macOS
-.DS_Store
-
-# Temporary files created by Metro to check the health of the file watcher
+# Metro
 .metro-health-check*
+
+# Environment
+.env
+.env.local
